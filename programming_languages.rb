@@ -8,6 +8,7 @@ def reformat_languages(languages)
         lang_details.each do |lang_name, lang_type|
           #binding.pry
           new_hash[lang_name] ||= lang_type
+          new_hash[lang_name][:style] ||= []
         end
     end
 
